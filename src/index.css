@@ -1,0 +1,219 @@
+/* noto-serif-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/noto-serif-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-serif-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/noto-serif-v30-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-serif-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/noto-serif-v30-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-serif-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/noto-serif-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/inter-v19-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/inter-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-v19-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* source-code-pro-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/source-code-pro-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-code-pro-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/source-code-pro-v30-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-code-pro-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/source-code-pro-v30-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-code-pro-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/source-code-pro-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@root {
+  /* COLORS */
+  --color-bg-dark: rgba(14, 18, 27, 1);
+  --color-vv: hsl(221, 8%, 48%) --color-neutral-950: hsl(222, 32%, 8%);
+  --color-neutral-900: hsl(230, 19%, 12%);
+  --color-neutral-800: hsl(231, 16%, 16%);
+  --color-neutral-700: hsl(231, 16%, 20%);
+  --color-neutral-600: hsl(222, 11%, 36%);
+  --color-neutral-500: hsl(221, 8%, 48%);
+  --color-neutral-400: hsl(220, 11%, 64%);
+  --color-neutral-300: hsl(219, 15%, 82%);
+  --color-neutral-200: hsl(216, 19%, 90%);
+  --color-neutral-100: hsl(216, 26%, 96%);
+  --color-neutral-50: hsl(216, 33%, 97%);
+  --color-neutral-0: hsl(0, 0%, 100%);
+
+  --color-blue-700: hsl(228, 70%, 48%);
+  --color-blue-500: hsl(228, 100%, 60%);
+
+  --color-blue-50: hsl(222, 100%, 96%);
+
+  --color-green-500: hsl(148, 71%, 44%);
+  --color-green-100: hsl(154, 84%, 90%);
+
+  --color-red-500: hsl(355, 96%, 60%);
+  --color-red-100: hsl(356, 100%, 92%);
+
+  /* FONT WEIGHT */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* FONT SIZE */
+  --text-2xl: 1.5rem;
+  --text-xl: 1.25rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* SPACING */
+  --spacing-0: 0px;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+
+  /* RADIUS */
+  --radius-4: 0.25rem;
+  --radius-6: 0.5rem;
+  --radius-8: 0.75rem;
+  --radius-10: 0.625rem;
+  --radius-12: 0.75rem;
+  --radius-16: 1rem;
+  --radius-20: 1.25rem;
+  --radius-24: 1.5rem;
+  --radius-999: 62.4375rem;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 500;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  transition: font-family 0.3s ease;
+
+  /* color:#717784  ; */
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 16rem 1fr; /* Sidebar + Main */
+  grid-template-rows: auto 1fr; /* Header + Content */
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .app-layout {
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto 1fr auto; /* Header, Main, MobileMenu */
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar */
+  }
+
+  .mobile-menu {
+    display: block; /* Show mobile menu */
+  }
+}
+@media screen and (max-width: 768px) {
+  .app-layout {
+    /* Header, Main, MobileMenu */
+  }
+  .header {
+    display: none;
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar */
+  }
+
+  .mobile-menu {
+    display: block; /* Show mobile menu */
+  }
+}
