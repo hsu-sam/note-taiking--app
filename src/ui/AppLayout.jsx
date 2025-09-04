@@ -3,7 +3,6 @@ import Sidebar from "./Sidebar";
 import Header from "./Header";
 import Main from "./Main";
 import { useEffect, useState } from "react";
-import MobileMenu from "./MobileMenu";
 
 function AppLayout() {
   const [selectedTag, setSelectedTag] = useState("");
@@ -57,6 +56,24 @@ function AppLayout() {
       </Main>
     </div>
   );
+
+  // return (
+  //   <>
+  //     {/* Desktop */}
+  //     <div className="hidden lg:block">
+  //       <DesktopLayout>
+  //         <Outlet />
+  //       </DesktopLayout>
+  //     </div>
+
+  //     {/* Tablet */}
+  //     <div className="hidden md:block lg:hidden">
+  //       <MobileTabletLayout>
+  //         <Outlet />
+  //       </MobileTabletLayout>
+  //     </div>
+  //   </>
+  // );
 }
 
 export default AppLayout;

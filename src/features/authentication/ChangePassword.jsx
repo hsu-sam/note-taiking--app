@@ -1,12 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Button from "../../ui/Button";
 import Input from "../../ui/Input";
 import { useIsDarkMode } from "../../context/DarkModeContext";
 
 function ChangePassword() {
-  const [showOld, setShowOld] = useState(false);
-  const [showNew, setShowNew] = useState(false);
-  const [showConfirm, setShowConfirm] = useState(false);
+  // const [showOld, setShowOld] = useState(false);
+  // const [showNew, setShowNew] = useState(false);
+  // const [showConfirm, setShowConfirm] = useState(false);
   const isDarkMode = useIsDarkMode();
   const showSrc = !isDarkMode ? (
     <img
@@ -44,7 +44,7 @@ function ChangePassword() {
               id="old-password"
               name="oldPassword"
               autoComplete="current-password"
-              type={showOld ? "text" : "password"}
+              type="password"
               required
               // className="rounded border border-neutral-300 bg-white px-3 py-2"
             />
@@ -60,7 +60,7 @@ function ChangePassword() {
               id="new-password"
               name="newPassword"
               autoComplete="new-password"
-              type={showNew ? "text" : "password"}
+              type="password"
               required
               // className="rounded border border-neutral-300 px-3 py-2"
             />
@@ -80,7 +80,7 @@ function ChangePassword() {
               id="confirm-password"
               name="confirmPassword"
               autoComplete="new-password"
-              type={showConfirm ? "text" : "password"}
+              type="password"
               required
               // className="rounded border border-neutral-300 px-3 py-2"
             />

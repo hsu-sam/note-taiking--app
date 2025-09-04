@@ -12,7 +12,7 @@ function SettingOptions() {
   );
 
   return (
-    <div className="flex h-screen flex-col gap-[8px] border-r border-neutral-200 px-[16px] py-[20px] dark:border-neutral-800">
+    <div>
       <div className="border-b border-neutral-200 dark:border-neutral-800">
         <NavLink to="color-theme">
           {({ isActive }) => (
@@ -224,3 +224,4 @@ function SettingOptions() {
 }
 
 export default SettingOptions;
+//  className="flex h-screen flex-col gap-[8px] border-r border-neutral-200 px-[16px] py-[20px] dark:border-neutral-800"

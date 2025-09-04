@@ -9,7 +9,6 @@ function MobileMenu() {
         </div>
       </NavLink>
       <NavLink to="search" className="">
-        {" "}
         <div>
           <span>Search</span>
         </div>

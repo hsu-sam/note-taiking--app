@@ -1,5 +1,3 @@
-// import SettingOptions from "../features/Settings/settingOptions";
-
 import { Outlet } from "react-router-dom";
 import SettingOptions from "../features/Settings/settingOptions";
 

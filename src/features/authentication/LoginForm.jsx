@@ -7,8 +7,9 @@ import { useLogin } from "./useLogin";
 import LoadingMini from "../../ui/LoadingMini";
 
 function LoginForm() {
-  const [email, setEmail] = useState("sam@example.com");
-  const [password, setPassword] = useState("Sam@1234");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const { login, isLoading } = useLogin();
   const isDarkMode = useIsDarkMode();
 
@@ -17,16 +18,34 @@ function LoginForm() {
       src="/svgs/show.svg"
       alt="Toggle visibility"
       className="absolute top-7.5 right-3 cursor-pointer"
-      // onClick={() => setShowOld(!showOld)}
+      onClick={() => setShowPassword(!showPassword)}
     />
   ) : (
     <img
       src="/svgs/show-dark.svg"
       alt="Toggle visibility"
       className="absolute top-8 right-3 cursor-pointer"
-      // onClick={() => setShowOld(!showOld)}
+      onClick={() => setShowPassword(true)}
     />
   );
+
+  const hideSrc = !isDarkMode ? (
+    <img
+      src="/svgs/hide.svg"
+      alt="Toggle visibility"
+      className="absolute top-7.5 right-3 cursor-pointer"
+      onClick={() => setShowPassword(!showPassword)}
+    />
+  ) : (
+    <img
+      src="/svgs/hide-dark.svg"
+      alt="Toggle visibility"
+      className="absolute top-8 right-3 cursor-pointer"
+      onClick={() => setShowPassword(false)}
+    />
+  );
+
+  const iconShowHidePassword = showPassword ? hideSrc : showSrc;
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -81,11 +100,12 @@ function LoginForm() {
             id="password"
             autoComplete="password"
             value={password}
-            type="password"
+            // type="password"
+            type={showPassword ? "text" : "password"}
             onChange={(e) => setPassword(e.target.value)}
             disabled={isLoading}
           />
-          {showSrc}
+          {iconShowHidePassword}
         </div>
 
         <Button disabled={isLoading} className="w-full text-white">
@@ -95,7 +115,7 @@ function LoginForm() {
 
       <div>
         <p className="text-center text-neutral-600">
-          No account yet?{" "}
+          No account yet?
           <NavLink
             to="/signup"
             className="text-neutral-950 dark:text-neutral-50"
